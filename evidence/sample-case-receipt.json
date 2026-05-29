@@ -1,0 +1,54 @@
+{
+  "case_id": "INC-2026-0529-API",
+  "service": "Checkout API",
+  "severity": "SEV-2",
+  "track": "UiPath Maestro Case",
+  "orchestration": "UiPath Maestro Case with Agent Builder, API Workflows, Robots, Coded Agent, and Human Tasks",
+  "status": "closed",
+  "approvals": [
+    {
+      "at": "2026-05-29T20:10:00.000Z",
+      "approver_role": "Incident Commander",
+      "decision": "approved",
+      "reason": "Rollback is reversible and has a clear recovery metric."
+    }
+  ],
+  "evidence": [
+    "datadog.checkout.5xx.window",
+    "pagerduty.incident.link",
+    "jira.deploy.change",
+    "grafana.payment-adapter.pool"
+  ],
+  "timeline": [
+    {
+      "step": "intake",
+      "actor": "Agent",
+      "status": "completed"
+    },
+    {
+      "step": "evidence",
+      "actor": "Robot/API",
+      "status": "completed"
+    },
+    {
+      "step": "analysis",
+      "actor": "Coded Agent",
+      "status": "completed"
+    },
+    {
+      "step": "approval",
+      "actor": "Human",
+      "status": "approved"
+    },
+    {
+      "step": "execute",
+      "actor": "Robot/API",
+      "status": "completed"
+    },
+    {
+      "step": "close",
+      "actor": "Agent",
+      "status": "completed"
+    }
+  ]
+}

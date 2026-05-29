@@ -1,0 +1,22 @@
+{
+  "name": "agentic-incident-ops",
+  "version": "0.1.0",
+  "private": false,
+  "description": "UiPath AgentHack MVP for governed agentic incident operations.",
+  "type": "module",
+  "scripts": {
+    "demo": "node server.mjs",
+    "check": "node --check server.mjs && node --check demo/app.js && node --check automation/devpost_fill_draft.mjs"
+  },
+  "keywords": [
+    "uipath",
+    "agenthack",
+    "maestro",
+    "incident-response",
+    "agentic-automation"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "playwright": "^1.53.0"
+  }
+}

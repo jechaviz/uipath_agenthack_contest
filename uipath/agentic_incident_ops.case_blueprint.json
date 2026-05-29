@@ -1,0 +1,89 @@
+{
+  "name": "Agentic Incident Ops",
+  "hackathon_track": "UiPath Maestro Case",
+  "case_type": "Production Incident",
+  "goal": "Coordinate dynamic incident response with governed agents, robots, APIs, human approval, and evidence receipts.",
+  "stages": [
+    {
+      "id": "intake",
+      "name": "Incident Intake",
+      "owner": "Intake Classifier Agent",
+      "uipath_component": "Agent Builder",
+      "inputs": ["alert_payload", "ticket_url", "service_catalog"],
+      "outputs": ["severity", "service", "blast_radius", "initial_case_summary"],
+      "exception_paths": ["missing_service_mapping", "duplicate_incident", "low_confidence_classification"]
+    },
+    {
+      "id": "evidence_collection",
+      "name": "Evidence Collection",
+      "owner": "Evidence Collector Robot",
+      "uipath_component": "API Workflow plus Robot",
+      "inputs": ["case_summary", "observability_links", "deployment_metadata"],
+      "outputs": ["metric_window", "log_snippets", "deployment_diff", "screenshot_references"],
+      "exception_paths": ["monitoring_api_timeout", "screenshot_capture_failed", "access_denied"]
+    },
+    {
+      "id": "root_cause_analysis",
+      "name": "Root Cause Analysis",
+      "owner": "Root Cause Analyst Coded Agent",
+      "uipath_component": "Coded Agent",
+      "inputs": ["evidence_bundle", "runbook_index", "recent_changes"],
+      "outputs": ["ranked_hypotheses", "confidence_score", "recommended_runbook"],
+      "exception_paths": ["conflicting_signals", "confidence_below_threshold", "unknown_dependency"]
+    },
+    {
+      "id": "remediation_approval",
+      "name": "Remediation Approval",
+      "owner": "Incident Commander",
+      "uipath_component": "Maestro Human Task",
+      "inputs": ["recommended_runbook", "risk_summary", "customer_impact"],
+      "outputs": ["approval_decision", "approval_comment", "communications_decision"],
+      "exception_paths": ["approval_rejected", "needs_change_advisory", "requires_customer_legal_review"]
+    },
+    {
+      "id": "remediation_execution",
+      "name": "Remediation Execution",
+      "owner": "Runbook Executor Robot",
+      "uipath_component": "Robot plus API Workflow",
+      "inputs": ["approved_runbook", "rollback_target", "guardrail_checks"],
+      "outputs": ["execution_log", "post_action_metrics", "rollback_receipt"],
+      "exception_paths": ["guardrail_failed", "rollback_failed", "manual_takeover_required"]
+    },
+    {
+      "id": "communications",
+      "name": "Stakeholder Communications",
+      "owner": "Communications Agent",
+      "uipath_component": "Agent Builder plus Human Task",
+      "inputs": ["case_status", "impact_summary", "approved_message_policy"],
+      "outputs": ["slack_update", "status_page_draft", "executive_summary"],
+      "exception_paths": ["customer_impact_unclear", "message_not_approved", "channel_unavailable"]
+    },
+    {
+      "id": "closure",
+      "name": "Closure and Postmortem",
+      "owner": "Postmortem Agent",
+      "uipath_component": "Agent Builder plus API Workflow",
+      "inputs": ["timeline", "evidence_receipts", "actions_taken"],
+      "outputs": ["rca_draft", "action_items", "final_evidence_receipt"],
+      "exception_paths": ["missing_approval_record", "unresolved_action_owner", "case_reopened"]
+    }
+  ],
+  "human_gates": [
+    "SEV-1 or SEV-2 customer impact",
+    "Production rollback or feature flag change",
+    "External customer communication",
+    "Confidence below configured threshold",
+    "Any failed guardrail check"
+  ],
+  "evidence_policy": {
+    "store": "UiPath case timeline and repository evidence folder",
+    "redaction": "No secrets, tokens, personal data, or internal-only customer details",
+    "receipt_fields": ["case_id", "actor", "action", "input_hash", "output_hash", "timestamp", "approval_id"]
+  },
+  "production_success_metrics": [
+    "Mean time to acknowledge reduced by 30%",
+    "Mean time to mitigate reduced by 20%",
+    "100% of high-risk remediations have human approval evidence",
+    "100% of incidents produce a postmortem packet"
+  ]
+}

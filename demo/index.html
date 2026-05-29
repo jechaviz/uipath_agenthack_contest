@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agentic Incident Ops MVP</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">UiPath Maestro Case MVP</p>
+          <h1>Agentic Incident Ops</h1>
+        </div>
+        <div class="case-status" aria-live="polite">
+          <span id="case-state-dot" class="state-dot"></span>
+          <span id="case-state">Ready</span>
+        </div>
+      </header>
+
+      <section class="incident-strip" aria-label="Incident summary">
+        <div>
+          <span class="label">Case</span>
+          <strong id="case-id">INC-2026-0529-API</strong>
+        </div>
+        <div>
+          <span class="label">Service</span>
+          <strong>Checkout API</strong>
+        </div>
+        <div>
+          <span class="label">Severity</span>
+          <strong class="severity">SEV-2</strong>
+        </div>
+        <div>
+          <span class="label">Business Impact</span>
+          <strong>$18.6k at risk</strong>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel queue-panel" aria-label="Incident queue">
+          <div class="panel-heading">
+            <h2>Queue</h2>
+            <button id="reset-case" type="button" title="Reset demo">Reset</button>
+          </div>
+          <button class="incident-item active" type="button">
+            <span>Checkout 5xx spike</span>
+            <small>Datadog, PagerDuty, Jira</small>
+          </button>
+          <button class="incident-item" type="button">
+            <span>Delayed webhook jobs</span>
+            <small>New Relic, Slack</small>
+          </button>
+          <button class="incident-item" type="button">
+            <span>ERP sync degraded</span>
+            <small>ServiceNow, Grafana</small>
+          </button>
+        </aside>
+
+        <section class="panel main-panel" aria-label="Maestro case timeline">
+          <div class="panel-heading">
+            <div>
+              <h2>Maestro Case Flow</h2>
+              <p>Dynamic incident response with agents, robots, APIs, and human gates.</p>
+            </div>
+            <div class="button-row">
+              <button id="run-case" class="primary" type="button">Run Case</button>
+              <button id="approve-action" type="button" disabled>Approve</button>
+              <button id="export-evidence" type="button" disabled>Export Evidence</button>
+            </div>
+          </div>
+
+          <ol id="timeline" class="timeline"></ol>
+        </section>
+
+        <aside class="panel detail-panel" aria-label="Current agent output">
+          <div class="panel-heading">
+            <h2>Agent Output</h2>
+            <span id="confidence-pill" class="confidence">0%</span>
+          </div>
+          <dl class="facts">
+            <div>
+              <dt>Hypothesis</dt>
+              <dd id="hypothesis">Waiting for evidence.</dd>
+            </div>
+            <div>
+              <dt>Recommended action</dt>
+              <dd id="recommendation">No action yet.</dd>
+            </div>
+            <div>
+              <dt>Human gate</dt>
+              <dd id="human-gate">Required for rollback or customer communications.</dd>
+            </div>
+          </dl>
+          <div class="receipt-preview">
+            <h3>Receipt Preview</h3>
+            <pre id="receipt-preview">{ "status": "not_started" }</pre>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script src="./app.js" type="module"></script>
+  </body>
+</html>

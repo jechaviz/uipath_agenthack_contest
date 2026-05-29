@@ -1,0 +1,28 @@
+{
+  "submission_url": "https://devpost.com/submit-to/29624-uipath-agenthack/manage/submissions",
+  "title": "Agentic Incident Ops",
+  "tagline": "Governed UiPath agents that turn production incidents into auditable, human-approved remediation cases.",
+  "track": "UiPath Maestro Case",
+  "repo_url": "https://github.com/jechaviz/contests-worth-it-uipath_agenthack",
+  "video_url": "TBD",
+  "deck_url": "TBD",
+  "license": "MIT",
+  "built_with": [
+    "UiPath Maestro Case",
+    "UiPath Agent Builder",
+    "UiPath API Workflows",
+    "UiPath Robots",
+    "UiPath Coded Agent",
+    "UiPath Human Tasks",
+    "UiPath Automation Cloud",
+    "OpenAI Codex"
+  ],
+  "description": "Production incidents are chaotic, high stakes, and full of exceptions. Agentic Incident Ops uses UiPath Maestro Case to coordinate alerts, evidence, root-cause reasoning, human approvals, remediation robots, stakeholder communications, and postmortem receipts in one governed workflow.",
+  "inspiration": "Engineering teams respond to incidents across PagerDuty, Jira, Slack, monitoring dashboards, runbooks, and deployment tools. The incident commander has to reconstruct what happened, decide what is safe, approve actions, update stakeholders, and prove the response later. Agentic automation is valuable here only if it stays governed. UiPath is the orchestration and control layer.",
+  "what_it_does": "Agentic Incident Ops creates a Maestro Case for each incident. Agents classify the incident, gather evidence, rank root-cause hypotheses, propose a reversible remediation, and draft communications. Humans approve high-risk production actions and customer-facing messages. UiPath robots and API Workflows execute approved runbook steps and write evidence receipts back to the case timeline.",
+  "how_we_built_it": "The solution is designed around UiPath Automation Cloud. Maestro Case coordinates the dynamic lifecycle. Agent Builder powers intake, communications, and postmortem agents. API Workflows connect alerting, ticketing, monitoring, deployment, chat, and feature flag tools. Robots execute deterministic runbook steps. A coded agent ranks hypotheses and recommends runbooks from evidence. Human Tasks gate production changes and external communications. Codex helped scaffold the demo, workflow blueprint, documentation, and submission package.",
+  "challenges": "The main challenge was designing autonomy without unsafe production action. The workflow separates reasoning from execution: agents recommend, Maestro governs, humans approve risky steps, and robots execute deterministic actions.",
+  "accomplishments": "We produced a complete UiPath Maestro Case workflow blueprint, a runnable local MVP, a Devpost-ready submission package, a public repo plan, and coding agent evidence for bonus criteria.",
+  "learned": "Agentic systems need visible control points. The strongest incident operations pattern is not letting an agent fix everything. It is letting UiPath coordinate the right agent, robot, API, or person at the right time, with receipts.",
+  "whats_next": "Recreate the blueprint in UiPath Maestro Case, connect one live alert source, one monitoring source, one ticket source, and one safe remediation action, then record the final 5-minute Automation Cloud demo."
+}
