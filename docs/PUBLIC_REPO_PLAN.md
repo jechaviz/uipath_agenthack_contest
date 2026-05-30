@@ -9,6 +9,11 @@ Supporting public repositories:
 - `https://github.com/jechaviz/uipath_agenthack_core`
 - `https://github.com/jechaviz/uipath_agenthack_web`
 
+Public demo/deck:
+
+- `https://jechaviz.github.io/uipath_agenthack_web/`
+- `https://jechaviz.github.io/uipath_agenthack_web/deck.html`
+
 ## Required Public Contents
 
 - `README.md`: project overview, setup, UiPath components, coding agent evidence.

@@ -5,7 +5,8 @@
   "track": "UiPath Maestro Case",
   "repo_url": "https://github.com/jechaviz/uipath_agenthack_contest",
   "video_url": "TBD",
-  "deck_url": "TBD",
+  "demo_url": "https://jechaviz.github.io/uipath_agenthack_web/",
+  "deck_url": "https://jechaviz.github.io/uipath_agenthack_web/deck.html",
   "license": "MIT",
   "built_with": [
     "UiPath Maestro Case",

@@ -108,12 +108,16 @@ Placeholder:
 TBD YouTube, Vimeo, or Youku link
 ```
 
-## Presentation Deck URL
-
-Placeholder:
+## Public Demo URL
 
 ```text
-TBD public Google Drive, OneDrive, or Dropbox link
+https://jechaviz.github.io/uipath_agenthack_web/
+```
+
+## Presentation Deck URL
+
+```text
+https://jechaviz.github.io/uipath_agenthack_web/deck.html
 ```
 
 ## Screenshots To Upload

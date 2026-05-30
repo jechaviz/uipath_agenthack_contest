@@ -1,0 +1,48 @@
+{
+  "default_email": "jesus.cgalaviz@gmail.com",
+  "browser": "Microsoft Edge default personal profile",
+  "targets": [
+    {
+      "id": "devpost_submission",
+      "label": "Devpost UiPath AgentHack submission",
+      "url": "https://devpost.com/submit-to/29624-uipath-agenthack/manage/submissions",
+      "profile_account_ref": "devpost_uipath_agenthack",
+      "preferred_auth": "google_sso_existing_edge_session"
+    },
+    {
+      "id": "uipath_automation_cloud",
+      "label": "UiPath Automation Cloud",
+      "url": "https://cloud.uipath.com/",
+      "profile_account_ref": "uipath_automation_cloud_agenthack_labs",
+      "preferred_auth": "google_sso_existing_edge_session"
+    },
+    {
+      "id": "youtube_upload",
+      "label": "YouTube demo upload",
+      "url": "https://studio.youtube.com/channel/UC/videos/upload",
+      "profile_account_ref": "youtube_demo_upload",
+      "preferred_auth": "google_sso_existing_edge_session"
+    },
+    {
+      "id": "google_drive_deck",
+      "label": "Google Drive deck",
+      "url": "https://drive.google.com/drive/my-drive",
+      "profile_account_ref": "google_drive_deck",
+      "preferred_auth": "google_sso_existing_edge_session"
+    },
+    {
+      "id": "public_demo",
+      "label": "Public demo",
+      "url": "https://jechaviz.github.io/uipath_agenthack_web/",
+      "profile_account_ref": "public_release",
+      "preferred_auth": "none"
+    },
+    {
+      "id": "public_deck",
+      "label": "Public HTML deck",
+      "url": "https://jechaviz.github.io/uipath_agenthack_web/deck.html",
+      "profile_account_ref": "public_release",
+      "preferred_auth": "none"
+    }
+  ]
+}
