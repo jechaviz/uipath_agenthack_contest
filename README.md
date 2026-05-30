@@ -43,7 +43,25 @@ See [docs/UIPATH_WORKFLOW_PROPOSAL.md](docs/UIPATH_WORKFLOW_PROPOSAL.md) and [ui
 
 ## Demo MVP
 
-The included demo is a local command-center prototype that simulates the UiPath case lifecycle, human approval gate, and evidence receipt export.
+There are two demo surfaces:
+
+- Competition command center: `C:\git\websites\uipath_agenthack`
+- Lightweight fallback demo: `demo/`
+
+Run the competition command center:
+
+```powershell
+cd C:\git\websites\uipath_agenthack
+npm run serve
+```
+
+Then open:
+
+```text
+http://localhost:4273
+```
+
+Run the fallback demo from this repo:
 
 Run it:
 
@@ -61,6 +79,11 @@ No external credentials are required for the MVP. The production build will repl
 
 ## Devpost Materials
 
+- Judge guide: [docs/JUDGE_GUIDE.md](docs/JUDGE_GUIDE.md)
+- Competitive battlecard: [docs/COMPETITIVE_BATTLECARD.md](docs/COMPETITIVE_BATTLECARD.md)
+- Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
+- Security and governance: [docs/SECURITY_AND_GOVERNANCE.md](docs/SECURITY_AND_GOVERNANCE.md)
+- UiPath live build runbook: [docs/UIPATH_LIVE_BUILD_RUNBOOK.md](docs/UIPATH_LIVE_BUILD_RUNBOOK.md)
 - Task plan: [docs/TASK_AGENTIC_INCIDENT_OPS_PROD100.md](docs/TASK_AGENTIC_INCIDENT_OPS_PROD100.md)
 - Submission packet: [docs/DEVPOST_SUBMISSION_PACKET.md](docs/DEVPOST_SUBMISSION_PACKET.md)
 - Public repo plan: [docs/PUBLIC_REPO_PLAN.md](docs/PUBLIC_REPO_PLAN.md)
@@ -82,6 +105,21 @@ This project uses OpenAI Codex as an AI-assisted coding agent. Codex contributed
 - Draft automation script for preparing external submissions.
 
 Evidence is documented in [evidence/codex-agent-usage.md](evidence/codex-agent-usage.md). The generated artifacts are meaningfully integrated into the submission because they define the workflow, run the demo, and provide the Devpost-ready materials.
+
+## Repos
+
+- Submission hub: https://github.com/jechaviz/uipath_agenthack_contest
+- Vlang core: https://github.com/jechaviz/uipath_agenthack_core
+- Vue command center: https://github.com/jechaviz/uipath_agenthack_web
+
+## Vlang Core
+
+The reusable core lives in `C:\git\v_projects\uipath_agenthack`.
+
+```powershell
+v run C:\git\v_projects\uipath_agenthack\cmd\uipath_agenthack validate --contest C:\git\v_projects\contests\worth_it\uipath_agenthack --web C:\git\websites\uipath_agenthack
+v run C:\git\v_projects\uipath_agenthack\cmd\uipath_agenthack pack --contest C:\git\v_projects\contests\worth_it\uipath_agenthack --web C:\git\websites\uipath_agenthack
+```
 
 ## Setup
 

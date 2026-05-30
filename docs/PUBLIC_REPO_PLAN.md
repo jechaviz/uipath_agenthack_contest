@@ -2,7 +2,12 @@
 
 ## Target Repository
 
-`https://github.com/jechaviz/contests-worth-it-uipath_agenthack`
+`https://github.com/jechaviz/uipath_agenthack_contest`
+
+Supporting public repositories:
+
+- `https://github.com/jechaviz/uipath_agenthack_core`
+- `https://github.com/jechaviz/uipath_agenthack_web`
 
 ## Required Public Contents
 

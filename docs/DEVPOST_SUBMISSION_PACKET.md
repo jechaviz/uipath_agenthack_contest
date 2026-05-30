@@ -97,7 +97,7 @@ Agentic systems need visible control points. The best product story is not "the 
 Placeholder:
 
 ```text
-https://github.com/jechaviz/contests-worth-it-uipath_agenthack
+https://github.com/jechaviz/uipath_agenthack_contest
 ```
 
 ## Demo Video URL

@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "demo": "node server.mjs",
-    "check": "node --check server.mjs && node --check demo/app.js && node --check automation/devpost_fill_draft.mjs"
+    "check": "node --check server.mjs && node --check demo/app.js && node --check automation/devpost_fill_draft.mjs",
+    "prod:score": "v run C:\\git\\v_projects\\uipath_agenthack\\cmd\\uipath_agenthack score --contest C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack --web C:\\git\\websites\\uipath_agenthack",
+    "prod:pack": "v run C:\\git\\v_projects\\uipath_agenthack\\cmd\\uipath_agenthack pack --contest C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack --web C:\\git\\websites\\uipath_agenthack"
   },
   "keywords": [
     "uipath",

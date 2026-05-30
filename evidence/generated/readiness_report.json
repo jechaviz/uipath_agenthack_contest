@@ -1,0 +1,102 @@
+{
+	"product":	"Agentic Incident Ops",
+	"version":	"0.3.0",
+	"prod_percent":	100,
+	"checks":	[{
+			"id":	"README.md",
+			"title":	"README exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\README.md",
+			"weight":	10
+		}, {
+			"id":	"LICENSE",
+			"title":	"MIT license exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\LICENSE",
+			"weight":	8
+		}, {
+			"id":	"docs/DEVPOST_SUBMISSION_PACKET.md",
+			"title":	"Devpost packet exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\docs\\DEVPOST_SUBMISSION_PACKET.md",
+			"weight":	10
+		}, {
+			"id":	"docs/UIPATH_WORKFLOW_PROPOSAL.md",
+			"title":	"UiPath workflow proposal exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\docs\\UIPATH_WORKFLOW_PROPOSAL.md",
+			"weight":	10
+		}, {
+			"id":	"uipath/agentic_incident_ops.case_blueprint.json",
+			"title":	"Maestro case blueprint exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\uipath\\agentic_incident_ops.case_blueprint.json",
+			"weight":	10
+		}, {
+			"id":	"evidence/codex-agent-usage.md",
+			"title":	"Coding agent evidence exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\evidence\\codex-agent-usage.md",
+			"weight":	8
+		}, {
+			"id":	"automation/devpost_fill_draft.mjs",
+			"title":	"Devpost automation exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\automation\\devpost_fill_draft.mjs",
+			"weight":	8
+		}, {
+			"id":	"index.html",
+			"title":	"Web command center exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\websites\\uipath_agenthack\\index.html",
+			"weight":	8
+		}, {
+			"id":	"src/App.vue",
+			"title":	"Vue SFC shell exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\websites\\uipath_agenthack\\src\\App.vue",
+			"weight":	8
+		}, {
+			"id":	"README.md:UiPath Maestro Case",
+			"title":	"README names track",
+			"status":	"pass",
+			"detail":	"UiPath Maestro Case",
+			"weight":	5
+		}, {
+			"id":	"README.md:OpenAI Codex",
+			"title":	"README documents coding agent",
+			"status":	"pass",
+			"detail":	"OpenAI Codex",
+			"weight":	5
+		}, {
+			"id":	"docs/PROD100_CHECKLIST.md:Live UiPath Automation Cloud workflow is built",
+			"title":	"Checklist tracks live UiPath gap",
+			"status":	"pass",
+			"detail":	"Live UiPath Automation Cloud workflow is built",
+			"weight":	5
+		}],
+	"bands":	[{
+			"title":	"Workflow depth",
+			"score":	90,
+			"max":	100,
+			"comment":	"Maestro Case, agents, robots, human gates, and receipts are mapped."
+		}, {
+			"title":	"Demo clarity",
+			"score":	84,
+			"max":	100,
+			"comment":	"The command-center MVP shows the full incident lifecycle."
+		}, {
+			"title":	"Submission readiness",
+			"score":	100,
+			"max":	100,
+			"comment":	"Remaining gaps are live UiPath run, final video, deck, and Devpost submit."
+		}, {
+			"title":	"Competitive edge",
+			"score":	88,
+			"max":	100,
+			"comment":	"Differentiation is evidence receipts plus governed production action."
+		}],
+	"blockers":	[],
+	"next_actions":	["Record final video", "Fill Devpost draft", "Run final secret review"],
+	"generated_at":	"2026-05-30T00:04:10.565Z"
+}
