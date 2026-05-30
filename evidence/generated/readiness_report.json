@@ -1,6 +1,6 @@
 {
 	"product":	"Agentic Incident Ops",
-	"version":	"0.3.0",
+	"version":	"0.4.0",
 	"prod_percent":	100,
 	"checks":	[{
 			"id":	"README.md",
@@ -20,6 +20,30 @@
 			"status":	"pass",
 			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\docs\\DEVPOST_SUBMISSION_PACKET.md",
 			"weight":	10
+		}, {
+			"id":	"docs/JUDGE_GUIDE.md",
+			"title":	"Judge guide exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\docs\\JUDGE_GUIDE.md",
+			"weight":	8
+		}, {
+			"id":	"docs/COMPETITIVE_BATTLECARD.md",
+			"title":	"Competitive battlecard exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\docs\\COMPETITIVE_BATTLECARD.md",
+			"weight":	8
+		}, {
+			"id":	"docs/SECURITY_AND_GOVERNANCE.md",
+			"title":	"Security and governance exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\docs\\SECURITY_AND_GOVERNANCE.md",
+			"weight":	8
+		}, {
+			"id":	"docs/UIPATH_LIVE_BUILD_RUNBOOK.md",
+			"title":	"UiPath live build runbook exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\docs\\UIPATH_LIVE_BUILD_RUNBOOK.md",
+			"weight":	8
 		}, {
 			"id":	"docs/UIPATH_WORKFLOW_PROPOSAL.md",
 			"title":	"UiPath workflow proposal exists",
@@ -74,6 +98,30 @@
 			"status":	"pass",
 			"detail":	"Live UiPath Automation Cloud workflow is built",
 			"weight":	5
+		}, {
+			"id":	"stale-link",
+			"title":	"No stale GitHub repo links",
+			"status":	"pass",
+			"detail":	"clean",
+			"weight":	8
+		}, {
+			"id":	"contest hub line guard",
+			"title":	"contest hub line guard",
+			"status":	"pass",
+			"detail":	"all source files under 600 lines",
+			"weight":	8
+		}, {
+			"id":	"web app line guard",
+			"title":	"web app line guard",
+			"status":	"pass",
+			"detail":	"all source files under 600 lines",
+			"weight":	8
+		}, {
+			"id":	"V core line guard",
+			"title":	"V core line guard",
+			"status":	"pass",
+			"detail":	"all source files under 600 lines",
+			"weight":	8
 		}],
 	"bands":	[{
 			"title":	"Workflow depth",
@@ -98,5 +146,5 @@
 		}],
 	"blockers":	[],
 	"next_actions":	["Record final video", "Fill Devpost draft", "Run final secret review"],
-	"generated_at":	"2026-05-30T00:04:10.565Z"
+	"generated_at":	"2026-05-30T00:20:36.933Z"
 }
