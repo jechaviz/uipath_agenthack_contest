@@ -1,0 +1,25 @@
+{
+  "schema": "vimport.profile_secure_inputs.v1",
+  "opportunity": "uipath_agenthack_2026",
+  "generated_at": "2026-05-29 19:46:43",
+  "storage_policy": "keep this file private; commit only redacted completion receipts",
+  "submit_gate": "human_review_required_before_external_submit",
+  "fields": [
+    {"id":"legal_company_name","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"incorporation_country","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"incorporation_date","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"total_funding_raised","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"funding_currency","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"founder_1_name","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"founder_1_email","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"founder_1_linkedin","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"founder_2_name_or_dedicated_member","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"founder_2_email","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"founder_2_linkedin","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"paris_attendance_confirmed","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"website_url","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"demo_url","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"deck_url","value":"","status":"secure_input_required","public_safe":false},
+    {"id":"video_url","value":"","status":"secure_input_required","public_safe":false}
+  ]
+}

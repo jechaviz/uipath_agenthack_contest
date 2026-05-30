@@ -84,6 +84,7 @@ No external credentials are required for the MVP. The production build will repl
 - Architecture: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)
 - Security and governance: [docs/SECURITY_AND_GOVERNANCE.md](docs/SECURITY_AND_GOVERNANCE.md)
 - UiPath live build runbook: [docs/UIPATH_LIVE_BUILD_RUNBOOK.md](docs/UIPATH_LIVE_BUILD_RUNBOOK.md)
+- Profile integration: [docs/PROFILE_INTEGRATION.md](docs/PROFILE_INTEGRATION.md)
 - Task plan: [docs/TASK_AGENTIC_INCIDENT_OPS_PROD100.md](docs/TASK_AGENTIC_INCIDENT_OPS_PROD100.md)
 - Submission packet: [docs/DEVPOST_SUBMISSION_PACKET.md](docs/DEVPOST_SUBMISSION_PACKET.md)
 - Public repo plan: [docs/PUBLIC_REPO_PLAN.md](docs/PUBLIC_REPO_PLAN.md)
@@ -105,6 +106,12 @@ This project uses OpenAI Codex as an AI-assisted coding agent. Codex contributed
 - Draft automation script for preparing external submissions.
 
 Evidence is documented in [evidence/codex-agent-usage.md](evidence/codex-agent-usage.md). The generated artifacts are meaningfully integrated into the submission because they define the workflow, run the demo, and provide the Devpost-ready materials.
+
+## Profile Integration
+
+The operator profile entry is `external_account_creation_authorizations.uipath_agenthack_2026` in `C:\git\customers\yo\profile\jecha_profile.yml`.
+
+It uses `jesus.cgalaviz@gmail.com` as the default login identity and stores account password placeholders as VImport vault refs only. Generated redacted profile evidence lives in [evidence/profile](evidence/profile).
 
 ## Repos
 

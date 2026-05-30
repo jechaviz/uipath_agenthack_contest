@@ -1,6 +1,6 @@
 {
 	"product":	"Agentic Incident Ops",
-	"version":	"1.0.0",
+	"version":	"1.1.0",
 	"prod_percent":	100,
 	"checks":	[{
 			"id":	"README.md",
@@ -69,6 +69,18 @@
 			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\automation\\devpost_fill_draft.mjs",
 			"weight":	8
 		}, {
+			"id":	"evidence/profile/yo_profile_manifest.redacted.json",
+			"title":	"Redacted profile manifest exists",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\evidence\\profile\\yo_profile_manifest.redacted.json",
+			"weight":	8
+		}, {
+			"id":	"evidence/profile/uipath_agenthack_secure_inputs.yml",
+			"title":	"Profile secure inputs exist",
+			"status":	"pass",
+			"detail":	"C:\\git\\v_projects\\contests\\worth_it\\uipath_agenthack\\evidence\\profile\\uipath_agenthack_secure_inputs.yml",
+			"weight":	8
+		}, {
 			"id":	"index.html",
 			"title":	"Web command center exists",
 			"status":	"pass",
@@ -98,6 +110,24 @@
 			"status":	"pass",
 			"detail":	"Live UiPath Automation Cloud workflow is built",
 			"weight":	5
+		}, {
+			"id":	"jecha_profile.yml:uipath_agenthack_2026",
+			"title":	"Profile has UiPath AgentHack authorization",
+			"status":	"pass",
+			"detail":	"uipath_agenthack_2026",
+			"weight":	8
+		}, {
+			"id":	"jecha_profile.yml:VAULT:uipath_agenthack_2026:DEVPOST_PASSWORD_RESERVED",
+			"title":	"Profile has Devpost vault ref",
+			"status":	"pass",
+			"detail":	"VAULT:uipath_agenthack_2026:DEVPOST_PASSWORD_RESERVED",
+			"weight":	8
+		}, {
+			"id":	"jecha_profile.yml:VAULT:uipath_agenthack_2026:UIPATH_PASSWORD_RESERVED",
+			"title":	"Profile has UiPath vault ref",
+			"status":	"pass",
+			"detail":	"VAULT:uipath_agenthack_2026:UIPATH_PASSWORD_RESERVED",
+			"weight":	8
 		}, {
 			"id":	"stale-link",
 			"title":	"No stale GitHub repo links",
@@ -146,5 +176,5 @@
 		}],
 	"blockers":	[],
 	"next_actions":	["Record final video", "Fill Devpost draft", "Run final secret review"],
-	"generated_at":	"2026-05-30T00:27:37.844Z"
+	"generated_at":	"2026-05-30T01:55:57.014Z"
 }
