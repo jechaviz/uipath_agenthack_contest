@@ -1,6 +1,6 @@
 {
   "name": "agentic-incident-ops",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": false,
   "description": "UiPath AgentHack MVP for governed agentic incident operations.",
   "type": "module",

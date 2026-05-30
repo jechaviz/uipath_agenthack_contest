@@ -1,6 +1,6 @@
 {
 	"product":	"Agentic Incident Ops",
-	"version":	"0.4.0",
+	"version":	"1.0.0",
 	"prod_percent":	100,
 	"checks":	[{
 			"id":	"README.md",
@@ -146,5 +146,5 @@
 		}],
 	"blockers":	[],
 	"next_actions":	["Record final video", "Fill Devpost draft", "Run final secret review"],
-	"generated_at":	"2026-05-30T00:20:36.933Z"
+	"generated_at":	"2026-05-30T00:27:37.844Z"
 }
